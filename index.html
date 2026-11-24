@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hair Craft Salon, Golaghat</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Tiro+Devanagari+Hindi&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d0d0d;--ink2:#1a1816;--bone:#f4efe6;--paper:#fffdf8;--brass:#b8924f;--brass2:#e0c48a;--line:#e2d9c6;--err:#d64539;--wa:#1f9d55}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Hind,system-ui,sans-serif;background:var(--bone);color:var(--ink);line-height:1.65;font-size:17px}
+.wrap{max-width:560px;margin:0 auto;padding:0 20px}
+
+/* ---------- Hero ---------- */
+header{
+  background:
+    repeating-linear-gradient(115deg,rgba(184,146,79,.07) 0 2px,transparent 2px 18px),
+    radial-gradient(circle at 50% 0%,#2a241b 0%,var(--ink) 70%);
+  color:var(--bone);text-align:center;padding:44px 20px 40px;
+  border-bottom:3px solid var(--brass);
+}
+.mono{
+  width:128px;height:128px;margin:0 auto 20px;border-radius:50%;
+  border:1.5px solid var(--brass);outline:1px solid rgba(184,146,79,.45);outline-offset:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:3.6rem;
+  letter-spacing:-.06em;color:var(--brass2);
+  background:radial-gradient(circle,#1c1812,#0d0d0d);
+}
+.brand{font-family:Cinzel,Georgia,serif;font-weight:700;font-size:1.9rem;letter-spacing:.22em;line-height:1.2}
+.brand small{display:block;font-weight:500;font-size:.85rem;letter-spacing:.7em;color:var(--brass2);margin-top:6px;padding-left:.7em}
+.tag{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.2rem;color:#d9c9a6;margin-top:16px}
+.meta{font-size:.95rem;color:#bdb4a2;margin-top:6px}
+.cta{
+  display:inline-block;margin-top:26px;padding:13px 30px;border:1px solid var(--brass);border-radius:999px;
+  color:var(--brass2);text-decoration:none;font-family:Cinzel,Georgia,serif;font-weight:600;letter-spacing:.14em;font-size:.9rem;
+}
+.cta:hover{background:var(--brass);color:var(--ink)}
+
+/* ---------- Sections ---------- */
+section{padding:34px 0 6px}
+h2{font-family:"Tiro Devanagari Hindi",Georgia,serif;font-weight:400;font-size:1.7rem;margin-bottom:14px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--brass),transparent)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px 20px;box-shadow:0 8px 24px -16px rgba(60,40,10,.35)}
+
+/* ---------- Form (dark card) ---------- */
+form.card{background:var(--ink2);color:var(--bone);border-color:#3a3226}
+label,legend{display:block;font-weight:600;margin-bottom:7px;padding:0;color:var(--brass2);letter-spacing:.03em}
+input[type=text],input[type=tel]{width:100%;font:inherit;padding:13px 15px;border:1px solid #4a3f2e;border-radius:8px;background:#0f0e0c;color:var(--bone)}
+input::placeholder{color:#7d7566}
+input:focus-visible,button:focus-visible,a:focus-visible,.g input:focus-visible+span{outline:3px solid var(--brass2);outline-offset:2px}
+.field{margin-bottom:18px}
+fieldset{border:0;padding:0}
+.g{display:flex;gap:10px}
+.g label{flex:1;margin:0;font-weight:500;color:var(--bone)}
+.g input{position:absolute;opacity:0}
+.g span{display:block;text-align:center;padding:11px 6px;border:1px solid #4a3f2e;border-radius:8px;cursor:pointer;background:#0f0e0c}
+.g input:checked+span{background:var(--brass);color:var(--ink);border-color:var(--brass);font-weight:600}
+.err{color:#ff8a7e;font-size:.9rem;min-height:1.2em;margin-top:4px}
+button.book{
+  width:100%;font-family:Cinzel,Georgia,serif;font-weight:700;letter-spacing:.14em;font-size:1rem;
+  padding:16px;border:0;border-radius:8px;background:var(--wa);color:#fff;cursor:pointer
+}
+button.book:active{transform:translateY(1px)}
+.hint{font-size:.9rem;color:#a39a89;margin-top:12px;text-align:center}
+
+/* ---------- Rates ---------- */
+.rates{list-style:none;padding:0}
+.rates li{display:flex;align-items:baseline;gap:10px;padding:11px 0}
+.rates .n{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.3rem}
+.rates .d{flex:1;border-bottom:1px dotted #b9ab8c;transform:translateY(-4px)}
+.rates .p{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.3rem;color:var(--brass);white-space:nowrap}
+.note{font-size:.92rem;color:#6b6252;margin-top:6px}
+
+/* ---------- Info ---------- */
+.info p{margin-bottom:8px}
+.info b{font-family:"Tiro Devanagari Hindi",Georgia,serif;font-weight:400;color:var(--brass)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.links a{padding:10px 18px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:500}
+.links a:hover{background:var(--ink);color:var(--bone)}
+.links a.wa{background:var(--wa);border-color:var(--wa);color:#fff}
+footer{text-align:center;color:#7a705f;font-family:Cinzel,Georgia,serif;letter-spacing:.2em;font-size:.75rem;padding:34px 20px 40px}
+</style>
+</head>
+<body>
+<header>
+  <div class="mono" aria-hidden="true">HC</div>
+  <div class="brand">HAIR CRAFT<small>SALON</small></div>
+  <div class="tag">Precision · Passion · Perfection</div>
+  <div class="meta">Golaghat · रोज़ खुला, सुबह 9 से रात 9 बजे तक</div>
+  <a class="cta" href="#book">BOOK YOUR TURN</a>
+</header>
+
+<main class="wrap">
+  <section id="book">
+    <h2>अपना नंबर बुक करें</h2>
+    <form class="card" id="f" novalidate>
+      <div class="field">
+        <label for="name">नाम</label>
+        <input type="text" id="name" autocomplete="name" placeholder="आपका नाम">
+        <div class="err" id="e-name"></div>
+      </div>
+      <div class="field">
+        <label for="phone">मोबाइल नंबर</label>
+        <input type="tel" id="phone" inputmode="numeric" maxlength="10" placeholder="10 अंकों का नंबर">
+        <div class="err" id="e-phone"></div>
+      </div>
+      <fieldset class="field">
+        <legend>जेंडर</legend>
+        <div class="g">
+          <label><input type="radio" name="gender" value="पुरुष"><span>पुरुष</span></label>
+          <label><input type="radio" name="gender" value="महिला"><span>महिला</span></label>
+          <label><input type="radio" name="gender" value="बच्चा"><span>बच्चा</span></label>
+        </div>
+        <div class="err" id="e-gender"></div>
+      </fieldset>
+      <button type="submit" class="book">BOOK MY NUMBER</button>
+      <p class="hint">बटन दबाने पर WhatsApp खुलेगा, मैसेज पहले से लिखा होगा। बस Send दबाएँ।</p>
+    </form>
+  </section>
+
+  <section id="rates">
+    <h2>सर्विस और रेट</h2>
+    <div class="card">
+      <ul class="rates" id="rl"></ul>
+      <p class="note" id="rn"></p>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>दुकान की जानकारी</h2>
+    <div class="card">
+      <p><b>पता</b>&nbsp; GDSA Market, पोस्ट ऑफ़िस के सामने, Golaghat</p>
+      <p><b>समय</b>&nbsp; हफ़्ते के सातों दिन, सुबह 9 से रात 9 बजे</p>
+      <div class="links">
+        <a class="wa" id="wa-link" href="#" target="_blank" rel="noopener">WhatsApp पर बात करें</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Hair+Craft+Salon+GDSA+Market+Golaghat" target="_blank" rel="noopener">मैप पर देखें</a>
+        <a href="https://www.instagram.com/hair_craft_salon_golaghat/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>HAIR CRAFT SALON · GOLAGHAT</footer>
+
+<script>
+// ===== यहाँ बदलाव करें =====
+var SHOP_WA = "917002641139";   // देश कोड 91 के साथ, बिना + के (स्क्रीन पर नहीं दिखेगा)
+var SHOP_NAME = "Hair Craft Salon";
+// रेट लिस्ट: price खाली हो तो सिर्फ़ नाम दिखेगा। उदाहरण: {name:"Haircut", price:"₹100"}
+var RATES = [
+  {name: "Haircut", price: ""},
+  {name: "Beard", price: ""},
+  {name: "Beauty", price: ""}
+];
+// ===========================
+
+(function(){
+  // WhatsApp बटन (नंबर सिर्फ़ लिंक में है, पेज पर नहीं)
+  document.getElementById("wa-link").href =
+    "https://wa.me/" + SHOP_WA + "?text=" + encodeURIComponent("नमस्ते " + SHOP_NAME + ", मुझे जानकारी चाहिए।");
+
+  var rl = document.getElementById("rl"), any = false;
+  RATES.forEach(function(r){
+    var li = document.createElement("li"), n = document.createElement("span"),
+        d = document.createElement("span"), p = document.createElement("span");
+    n.className = "n"; n.textContent = r.name;
+    d.className = "d"; p.className = "p";
+    if (r.price) { p.textContent = r.price; any = true; }
+    li.appendChild(n); li.appendChild(d); li.appendChild(p); rl.appendChild(li);
+  });
+  if (!any) document.getElementById("rn").textContent = "रेट के लिए WhatsApp पर पूछें।";
+
+  var f = document.getElementById("f");
+  function setErr(id, msg){ document.getElementById("e-" + id).textContent = msg; }
+  f.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.replace(/\D/g, "");
+    var g = f.querySelector('input[name="gender"]:checked');
+    var ok = true;
+    setErr("name", ""); setErr("phone", ""); setErr("gender", "");
+    if (name.length < 2) { setErr("name", "अपना नाम लिखें।"); ok = false; }
+    if (!/^[6-9]\d{9}$/.test(phone)) { setErr("phone", "सही 10 अंकों का मोबाइल नंबर डालें।"); ok = false; }
+    if (!g) { setErr("gender", "जेंडर चुनें।"); ok = false; }
+    if (!ok) return;
+    var msg = "नमस्ते " + SHOP_NAME + ",\nमेरा नाम: " + name + "\nमोबाइल: " + phone + "\nजेंडर: " + g.value + "\nकृपया मेरा नंबर लगा दीजिए।";
+    window.location.href = "https://wa.me/" + SHOP_WA + "?text=" + encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+  </html>
